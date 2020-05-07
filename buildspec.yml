@@ -1,0 +1,13 @@
+version: 0.1
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto8
+  build:
+    commands:
+      - java -version
+      - mvn package
+artifacts:
+  files:
+    - '**/*'
